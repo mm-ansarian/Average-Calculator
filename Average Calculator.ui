@@ -41,7 +41,7 @@
    <iconset>
     <normaloff>Calculator Icon.png</normaloff>Calculator Icon.png</iconset>
   </property>
-  <widget class="QTextBrowser" name="resultPage">
+  <widget class="QTextBrowser" name="ResultPage">
    <property name="geometry">
     <rect>
      <x>340</x>
@@ -64,7 +64,7 @@
     </font>
    </property>
   </widget>
-  <widget class="QPushButton" name="addButton">
+  <widget class="QPushButton" name="AddBtn">
    <property name="geometry">
     <rect>
      <x>40</x>
@@ -105,7 +105,7 @@
     <string>Add</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="calculateButton">
+  <widget class="QPushButton" name="CalcBtn">
    <property name="geometry">
     <rect>
      <x>40</x>
@@ -134,7 +134,7 @@
     <string>Calculate</string>
    </property>
   </widget>
-  <widget class="QLineEdit" name="scoreInput">
+  <widget class="QLineEdit" name="NumberInput">
    <property name="geometry">
     <rect>
      <x>10</x>
@@ -178,7 +178,7 @@
     <bool>false</bool>
    </property>
   </widget>
-  <widget class="QPushButton" name="clearButton">
+  <widget class="QPushButton" name="ClearBtn">
    <property name="geometry">
     <rect>
      <x>40</x>
@@ -207,7 +207,7 @@
     <string>Clear all</string>
    </property>
   </widget>
-  <widget class="QTextBrowser" name="scores">
+  <widget class="QTextBrowser" name="Numbers">
    <property name="geometry">
     <rect>
      <x>10</x>
@@ -224,16 +224,16 @@
     </font>
    </property>
    <property name="placeholderText">
-    <string>Scores: </string>
+    <string/>
    </property>
   </widget>
  </widget>
  <resources/>
  <connections>
   <connection>
-   <sender>addButton</sender>
+   <sender>AddBtn</sender>
    <signal>clicked()</signal>
-   <receiver>resultPage</receiver>
+   <receiver>ResultPage</receiver>
    <slot>backward()</slot>
    <hints>
     <hint type="sourcelabel">
@@ -247,9 +247,9 @@
    </hints>
   </connection>
   <connection>
-   <sender>calculateButton</sender>
+   <sender>CalcBtn</sender>
    <signal>clicked()</signal>
-   <receiver>resultPage</receiver>
+   <receiver>ResultPage</receiver>
    <slot>backward()</slot>
    <hints>
     <hint type="sourcelabel">
@@ -263,9 +263,9 @@
    </hints>
   </connection>
   <connection>
-   <sender>clearButton</sender>
+   <sender>ClearBtn</sender>
    <signal>clicked()</signal>
-   <receiver>resultPage</receiver>
+   <receiver>ResultPage</receiver>
    <slot>clear()</slot>
    <hints>
     <hint type="sourcelabel">
@@ -279,9 +279,9 @@
    </hints>
   </connection>
   <connection>
-   <sender>addButton</sender>
+   <sender>AddBtn</sender>
    <signal>clicked()</signal>
-   <receiver>scoreInput</receiver>
+   <receiver>NumberInput</receiver>
    <slot>clear()</slot>
    <hints>
     <hint type="sourcelabel">
