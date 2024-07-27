@@ -1,6 +1,8 @@
 from PyQt5 import QtCore, QtGui, QtWidgets
 
 
+# TODO (2024-07-27, Mohammad Mahdi Ansarian): Write the binary numbers of the icon in the source code.
+# TODO (2024-07-27, Mohammad Mahdi Ansarian): Add an ability to the main window to be able to change the size of everything.
 class uiPage(object):
     def __init__(self):
         self.counter = 1  # Initialize "counter" to count the number of calculated averages.
