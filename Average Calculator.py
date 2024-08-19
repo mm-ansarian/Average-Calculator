@@ -1,8 +1,9 @@
 from PyQt5 import QtCore, QtGui, QtWidgets
+import os
+import sys
 
 
-# TODO (2024-07-27, Mohammad Mahdi Ansarian): Write the binary numbers of the icon in the source code.
-# TODO (2024-07-27, Mohammad Mahdi Ansarian): Add an ability to the main window to be able to change the size of everything.
+# TODO (2024-07-27, Mohammad Mahdi Ansarian): Put every widgets in an organized table layout.
 class uiPage(object):
     def __init__(self):
         self.counter = 1  # Initialize "counter" to count the number of calculated averages.
@@ -17,8 +18,12 @@ class uiPage(object):
         main_window.setMinimumSize(QtCore.QSize(900, 589))
         main_window.setMaximumSize(QtCore.QSize(900, 589))
         main_window.setBaseSize(QtCore.QSize(900, 589))
+        if hasattr(sys, '_MEIPASS'):
+            icon_path = os.path.join(sys._MEIPASS, "Icon.ico")
+        else:
+            icon_path = os.path.join(os.path.dirname(__file__), "Icon.ico")
         icon = QtGui.QIcon()
-        icon.addPixmap(QtGui.QPixmap("Icon.ico"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        icon.addPixmap(QtGui.QPixmap(icon_path), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         main_window.setWindowIcon(icon)
 
         # Set up the text browser to display results.
@@ -252,7 +257,6 @@ class uiPage(object):
 
 # Run the program.
 if __name__ == "__main__":
-    import sys
     app = QtWidgets.QApplication(sys.argv)
     mainWindow = QtWidgets.QFrame()
     ui = uiPage()

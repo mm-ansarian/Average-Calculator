@@ -14,5 +14,5 @@ Pay attention "Icon.ico" which is the icon of the program and "Average Calculato
 
 ## TODO
 - [x] Add back and forward options.
-- [ ] Write the binary numbers of "Icon.ico" in the source code.
-- [ ] Add an ability to the main window to be able to change the size of everything.
+- [x] Fix a bug related to the program's icon.
+- [ ] Put every widgets in an organized table layout.
