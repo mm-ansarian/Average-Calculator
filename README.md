@@ -10,7 +10,11 @@ This program contains a GUI (Graphical User Interface) designs with QT and some 
 ## How to run
 To easy run (for the users or someone who wants to test the app), I put the .exe file in the project's folder, you can run the program with just a double-click on that file!
 But if you want to develop it or see its source codes, you can open the "Average Calculator.py" with your favorite IDE and run it.
-Pay attention "Icon.ico" which is the icon of the program and "Average Calculator.py" or "Average Calculator.exe", should be in one folder together; If you're taking a shortcut from "Average Calculator.exe", put the main .exe file next to the icon of the program.
+Pay attention if you're running the program from the source code, the "Icon.ico" which is the icon of the program and "Average Calculator.py" should be together in a same folder. 
+
+## Used tools
+- **Programming language**: Python
+- **GUI**: QT5
 
 ## TODO
 - [x] Add back and forward options.
